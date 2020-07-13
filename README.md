@@ -1,4 +1,4 @@
-RedisLive
+RedisLive (for python2.7)
 ---------
 
 Visualize your redis instances, analyze query patterns and spikes.
@@ -7,22 +7,18 @@ Visualize your redis instances, analyze query patterns and spikes.
 
 Setup Instructions
 ------------------
-#### Installation
+#### Set Virtual Environment
+```bash
+$ python -m virtualenv venv
 
-Install Dependencies
+$ source venv/bin/activate
+```
 
-+ [tornado](https://github.com/facebook/tornado) `pip install tornado`
-+ [redis.py](https://github.com/andymccurdy/redis-py) `pip install redis`
-+ [python-dateutil](http://labix.org/python-dateutil) `pip install python-dateutil`
+#### Install Dependencies
+```bash
+$ pip install -r requirements.txt
+```
 
-You'll also need argparse if you're running Python < 2.7:
-
-+ [argparse](http://code.google.com/p/argparse/) `pip install argparse`
-
-
-Get RedisLive
-
-+ Clone the repo `git clone https://github.com/kumarnitin/RedisLive.git` , or [download the latest release](https://github.com/kumarnitin/RedisLive/zipball/master)
 
 #### Configuration
 

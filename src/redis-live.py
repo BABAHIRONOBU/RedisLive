@@ -27,7 +27,7 @@ if __name__ == "__main__":
     (r"/api/commands", CommandsController),
     (r"/api/topcommands", TopCommandsController),
     (r"/api/topkeys", TopKeysController),
-    (r"/(.*)", BaseStaticFileHandler, {"path": "www"})
+    (r"/(.*)", BaseStaticFileHandler, {"path": "src/www"})
     ]
 
     server_settings = {'debug': options.debug}
