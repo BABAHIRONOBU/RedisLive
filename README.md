@@ -18,7 +18,8 @@ $ source venv/bin/activate
 ```bash
 $ pip install -r requirements.txt
 ```
-
+#### Schema Database
+if you use sqlite, run `schema.sql` to create table
 
 #### Configuration
 
@@ -31,8 +32,8 @@ if you don't have a spare redis instance to use to store Redis Live data, then y
 
 #### Start RedisLive
 
-+ start the monitoring script `./redis-monitor.py --duration=120` duration is in seconds (see caveat)
-+ start the webserver `./redis-live.py`
++ start the monitoring script `./src/redis-monitor.py --duration=120` duration is in seconds (see caveat)
++ start the webserver `./src/redis-live.py`
 + RedisLive is now running @ `http://localhost:8888/index.html`
 
 
